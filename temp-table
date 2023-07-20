@@ -1,0 +1,13 @@
+CREATE TABLE ##temp_Employee (
+EmployeeID int,
+JobTitle varchar(100),
+Salary int
+)
+
+select *
+from ##temp_Employee
+
+insert into ##temp_Employee values (
+'1001', 'HR', '45000'
+)
+

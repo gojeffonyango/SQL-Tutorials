@@ -1,0 +1,7 @@
+select *
+from EmployeeSalary
+
+select EmployeeID, Salary, (Select AVG(Salary) from EmployeeSalary)
+from EmployeeSalary
+group by EmployeeID, Salary
+Order by 1,2

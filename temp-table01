@@ -1,0 +1,4 @@
+insert into ##temp_Employee
+select *
+from [SQL Tutorial]..EmployeeSalary
+

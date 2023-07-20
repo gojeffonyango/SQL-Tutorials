@@ -1,0 +1,10 @@
+insert into #temp_employee2
+select JobTitle, count(JobTitle), Avg(Age), Avg(Salary)
+from [SQL Tutorial]..EmployeeDemographics emp
+join [SQL Tutorial]..EmployeeSalary sal
+on emp.EmployeeID = sal.EmployeeID
+
+group by JobTitle
+
+select *
+from ##temp_Employee
